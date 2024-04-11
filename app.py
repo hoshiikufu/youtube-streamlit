@@ -1,4 +1,3 @@
-!pip3 install yfinance
 import pandas as pd
 import altair as alt
 import yfinance as yf
