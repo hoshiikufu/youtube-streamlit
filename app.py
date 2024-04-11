@@ -1,3 +1,4 @@
+!pip3 install yfinance
 import pandas as pd
 import altair as alt
 import yfinance as yf
@@ -38,7 +39,6 @@ def get_data(days,tickers):
     return df 
 
 try:
-
     st.sidebar.write("""
     ## 株価の範囲指定
     """)
@@ -80,3 +80,6 @@ try:
         st.altair_chart(chart,use_container_width=True)
 except:
     st.error('おっと!なにかエラーがでているようです。')
+
+
+
